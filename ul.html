@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="HTML, aula, web, fatec">
+    <link rel = "stylesheet" href="css/style.css">
 
-    <title>Comentario</title>
+    <title>Aulas Web</title>
 </head>
 <body>
-    <hearder><!--TOPO-->
-        <a href="index.html" title="Voltar a Página Inicial"> <img src="imagem/FATEC_ZONA_LESTE.png" alt ="logo Fatec Zona Leste nas cores cinza e vermelho"></a>
+    <hearder class="flex-container" id="topo"><!--TOPO-->
+        <a href="index.html" title="Voltar a Página Inicial"> <img class="imagem" id="first"src="imagem/FATEC_ZONA_LESTE.png" alt ="logo Fatec Zona Leste nas cores cinza e vermelho"></a>
+        <a> <img class="imagem" id="second" src="imagem/17iY8t7EzWFz.gif" alt ="Prédios com as luzes piscando"></a>
 </hearder>
 
-    <nav><!--NAVEGAÇÃO-->
+    <nav class="flex-container"><!--NAVEGAÇÃO-->
         
-        <ul>
+        <ul class="menu">
             <li><a href="index.html">Início</a></li>
             <li><a href="comentario.html">Comentários</a></li>
             <li><a href="metadados.html">Metadados</a></li>
             <li><a href="javascript:void(0)">Lista</a>
             <ul>
-                <li><a ref="ol.html"></a>Lista Ordenada</li>
-                <li><a ref="ul.html">Lista Não Ordenada</a></li>
+                <li><a href="ol.html">Lista Ordenada</a></li>
+                <li><a href="ul.html">Lista Não Ordenada</a></li>
             </ul>
             </li>
             <li><a href="layout.html">Layout</a></li>
         </ul>
     </nav>
-    <main><!--CONTEUDO-->
+    <main class="flex-container" id="conteudo"><!--CONTEUDO-->
         <h1>Aulas para Lista Não Ordenada</h1>
        
        <p>Uma lista não ordenada começa com a tag&lg;ul&gt;. Cada item da lista começa com a tag &lg;li&gt;.
@@ -38,7 +40,7 @@
        
        <img src ="imagem/ul.png" alt="Imagem contendo instruções HMTL para lista não ordenada">
     </main>
-    <footer><!--RODAPÉ-->
+    <footer class="flex-container" id="rodape"><!--RODAPÉ-->
             <p>By Victor Demetrius Marqueto<br>
                 Todos os direitos reservados &copy;2022
             </p>
