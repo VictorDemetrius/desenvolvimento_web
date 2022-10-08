@@ -12,9 +12,32 @@
     <title>Aulas Web</title>
 </head>
 <body>
+    <div class="acessibilidade flex-container">
+        <ul class="atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2" title="Ir para ao menu de navegação">Ir para o menu de navegação [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="links_acess"></ul>
+            <li><a href="acessibilidade.html">acessibilidade</a></li>
+            <li><a href="javascript:void(0)" id="contraste">Contraste</a></li>
+            <li><a href="javascript:void(0)" id="semcontraste">Sem contraste</a></li>
+            <li><a href="javascript:void(0)" id="aumenta"></a>A+</li>
+            <li><a href="javascript:void(0)" id="diminui"></a>A-</li>
+    </div>
     <hearder class="flex-container" id="topo"><!--TOPO-->
         <a href="index.html" title="Voltar a Página Inicial"> <img class="imagem" id="first"src="imagem/FATEC_ZONA_LESTE.png" alt ="logo Fatec Zona Leste nas cores cinza e vermelho"></a>
         <a> <img class="imagem" id="second" src="imagem/17iY8t7EzWFz.gif" alt ="Prédios com as luzes piscando"></a>
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
 </hearder>
 
     <nav class="flex-container"><!--NAVEGAÇÃO-->
