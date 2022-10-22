@@ -10,28 +10,29 @@ body{
 .flex-container{
     display: flex;
     width: 100%;
-
-
 }
 
 .acessibilidade{
     background-color: gainsboro;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: black;
+    text-decoration: none;
     font-size: 1em;
-    
 }
 
-.atalhos, .links_acess{
+.atalhos, .links_access{
     list-style: none;
     display: inline-flex;
     padding: 5px;
 }
-
-.atalhos li, .links_acess li{
+.atalhos li, .links_access li{
+    
     padding-left: 10px;
 }
 
-.links_acess{
+.links_access{
+
     margin-left: 60%;
 }
 
@@ -39,17 +40,20 @@ body{
 #acessibilidade{
 	width: 60%;
 	margin: 4%;
-	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:bold ;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 	text-align: center;
 	height: auto;
-	
-	
+	color: black;
+    text-decoration: none;
 }
 
 #acessibilidade p{
 	text-align: justify;
 	line-height: 150%;
 }
+
+
 
 #topo{
     width: 100%;
@@ -71,6 +75,8 @@ body{
     position: right;
     width: 85%;
 }
+
+/*Navegação*/
 
 nav{
     width: 90%;
@@ -106,7 +112,7 @@ nav{
     list-style: none; 
     position: absolute;
     list-style: none;
-    top: 70px;
+    top: 50px;
     left: 0;
     background-color: gainsboro; 
 }
@@ -120,6 +126,15 @@ nav{
     display: block;
     width: 170px;
 }
+
+/* ocultar menu*/
+label[for="bt_menu"], #bt_menu{
+
+    display: none;
+}
+
+/*Conteudo*/
+
 #conteudo{
     min-height: 700px;
     flex-direction: column;
@@ -131,6 +146,11 @@ nav{
 #conteudo h1{
     text-align: center;
     padding-top: 2%;
+    font-size: 2em;
+}
+
+section{
+    padding: ;
 }
 
 #conteudo p, ol, h2, img{
@@ -187,6 +207,9 @@ video{
     width: 40%;
     height: auto;
     align-self: center;
+    margin: 30%;
+    margin-top:0%;
+    margin-bottom: 0%;
 }
 
 audio{
@@ -203,3 +226,112 @@ audio{
     align-items: center;
     height: 80px;
 }
+
+
+/*media queries barra de acessibilidade*/
+@media screen and (max-width: 1980px){
+
+    .links_access{
+
+        margin-left: 59%;
+    }
+    
+}
+
+@media screen and (max-width: 1345px){
+
+    .links_access{
+
+        margin-left: 25%;
+    }
+    
+}
+
+@media screen and (max-width: 1024px){
+
+    .links_access{
+
+        margin-left: 20%;
+    }
+    
+}
+
+@media screen and (max-width: 960px){
+
+    .links_access{
+
+        margin-left: 12%;
+    }
+    #acessibilidade{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 870px){
+    
+    .atalhos{
+        display: none;
+    }
+    .links_access{
+
+        margin-left: 7%;
+    }
+    #acessibilidade{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 430px){
+    
+    .atalhos{
+        display: none;
+    }
+    .links_access{
+        margin-left: 4%;
+    }
+    #acessibilidade{
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 300px){
+    
+    .atalhos{
+        display: none;
+    }
+    .links_access{
+        margin-left: 1%;
+    }
+    #acessibilidade{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 760px){
+    nav{
+        justify-content: left;
+    }
+    .menu{
+        display: none;
+    }
+    label[for="bt_menu"]{
+        display: block;
+        margin: 2%;
+    }
+}
+
+#bt_menu:checked ~ .menu{
+    display: block;
+}
+
+/*.menu li{
+    padding: 10% 1px;
+}*/
+
+.menu li ul {
+    position: relative;
+}
+
