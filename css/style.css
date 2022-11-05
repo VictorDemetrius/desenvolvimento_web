@@ -143,6 +143,33 @@ label[for="bt_menu"], #bt_menu{
 
 }
 
+.breadcrumb{
+    padding-left: 2%;
+    list-style: none;
+}
+
+.breadcrumb li{
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 0.8em;
+    color: silver;
+}
+
+.breadcrumb li a{
+    color: gray;
+    text-decoration: none;
+}
+
+.breadcrumb li a:hover{
+    color: blue;
+}
+
+.breadcrumb li+li::before{
+   content: ">\00a0";
+   padding: 6px;
+   color: gray; 
+}
+
 #conteudo h1{
     text-align: center;
     padding-top: 2%;
